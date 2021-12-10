@@ -2,6 +2,8 @@
 
 ## 2021-12-10
 
+- Jack Herrington font
+	- das war die Fira Nerd Font bzw FiraMono Nerd Font und dann noch die Schrift flottflott und editor.fontLigatures
 - **VSCode Extension:** display live preview of markdown files with the [Markdown Preview Enhanced](https://onespace.netlify.app/howtos?id=452) extension
 - **JavaScript/DOM Live-Coding:** [Create a number dropdown which shows that number of icons](https://onespace.netlify.app/howtos?id=453)
 - Tasks based on Straw Poll topics:

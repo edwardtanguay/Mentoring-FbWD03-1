@@ -1,5 +1,13 @@
 # Mentoring FbW D03-1
 
+## 2021-12-17
+
+- **bugfix**: on page load, force certain number to be default (doesn't work with window.onload)
+- **localStorage Live-Coding**: use the star-dropdown example where the browser remembers the number for each customer, e.g. test: Firefox has one 3, Chrome has 4, you close them, open them, and they still have 3 and 4
+- **star-clicking Live-Coding**: instead of the dropdown, one has 5 empty stars, when one clicks a star, that number of stars is selected, if you click e.g. 5, all 5 are selected
+- **message-notification Live-Coding**: when user enters name and comment on site, and clicks send button, website admin receives an e-mail
+
+
 ## 2021-12-10
 
 - Jack Herrington font

@@ -33,11 +33,12 @@
 		<div class="stars"></div>
 	</div>
 	<hr>
-	<button id="infoButton">info</button>
+	<button id="infoButton" title="please click for more info">info</button>
 	<script>
 		const rankElem = document.querySelector('.rank');
 		const infoElem = document.querySelector('#infoButton');
 		const starsElem = document.querySelector('.stars');
+		// rankElem[0].selected = 'selected';
 
 		const updateStars = () => {
 			starsElem.innerHTML = '<i class="fa fa-star" aria-hidden="true"></i>'.repeat(rankElem.value);
@@ -59,6 +60,9 @@
 				const option = new Option();
 				option.value = x;
 				option.text = String(x);
+				// if(x ===1) {
+				// 	option.selected = 'selected';
+				// }
 				rankElem.options.add(option);
 			}
 		}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3caa6fe8c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="index.html">
+        <img src="./images/logo.png" alt="Logo" />
+      </a>
+      <nav>
+        <a href="#">Produkte</a>
+        | <a href="#">Team</a> | <a href="#">Jobs</a> |
+        <a href="#">Kontakt</a>
+      </nav>
+      <button onclick="switchCurrency()" id="btn-currency">
+        <img class="flag" src="./images/flag-us.svg" alt="" />
+        Preise in Dollar anzeigen
+      </button>
+    </header>
+
+    <!-- Warenkorb -->
+    <section id="warenkorb">
+      <h2><i class="fas fa-shopping-cart"></i> Warenkorb</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Produkt</th>
+            <th>Preis</th>
+          </tr>
+        </thead>
+        <tbody id="liste">
+          <!-- Hier schreibt JavaScript die Produkte rein -->
+        </tbody>
+        <tfoot>
+          <th>Summe</th>
+          <!-- Hier schreibt JavaScript die Summe rein -->
+          <td id="total">0</td>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- Produkte -->
+    <main>
+      <figure class="card">
+        <img class="product" src="./images/product01.png" alt="" />
+        <h3 class="title">MacBook Pro (16 Zoll)</h3>
+        <!-- <p class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </p> -->
+        <figcaption class="description">
+          10-Core CPU, 16-Core GPU, 16GB Unified Memory, 512GB SSD Storage¹,
+          16-core Neural Engine, 16-inch Liquid Retina XDR display ,Three
+          Thunderbolt 4 ports, HDMI port, SDXC card slot, MagSafe 3 port Magic
+          Keyboard with Touch ID, Force Touch trackpad, 140W USB-C Power Adapter
+        </figcaption>
+        <div class="card-footer">
+          <p class="price">2249,00 €</p>
+          <button onclick="kaufen('MacBook Pro, 16 Zoll',2249)">
+            <i class="fas fa-shopping-cart"></i> Buy
+          </button>
+        </div>
+      </figure>
+      <figure class="card">
+        <img class="product" src="./images/product02.png" alt="" />
+        <h3 class="title">AKG K-240 Studio Kopfhörer</h3>
+        <figcaption class="description">
+          ohrumschließend, halboffen, dynamisch, neue XXL-Kapsel, Impedanz: 55
+          Ohm, Übertragungsbereich: 15 - 25.000 Hz, Empfindlichkeit: 104 dB/V,
+          Klirrfaktor &lt; 0,3 %, Nennbelastbarkeit: 200 mW ,Bügelband-Automatik
+          für perfekten Sitz, einseitige Kabelführung für bequemes Handling,
+          Gewicht mit Kabel: 284 g
+        </figcaption>
+        <div class="card-footer">
+          <p class="price">55,00 €</p>
+          <button onclick="kaufen('AKG K-240 Kopfhörer',55)">
+            <i class="fas fa-shopping-cart"></i> Buy
+          </button>
+        </div>
+      </figure>
+      <figure class="card">
+        <img class="product" src="./images/product03.png" alt="" />
+        <h3 class="title">MacBook Pro (14 Zoll)</h3>
+        <figcaption class="description">
+          8‑Core CPU, 14‑Core GPU, 16 GB gemeinsamer Arbeitsspeicher, 512 GB SSD
+          Speicher¹, 16‑Core Neural Engine, 14" Liquid Retina XDR Display, Drei
+          Thunderbolt 4 Anschlüsse, HDMI Anschluss, SDXC Kartensteckplatz,
+          MagSafe 3 Anschluss, Magic Keyboard mit Touch ID, Force Touch
+          Trackpad, 67W USB‑C Power Adapter
+        </figcaption>
+        <div class="card-footer">
+          <p class="price">1999,00 €</p>
+          <button onclick="kaufen('MacBook Pro, 14 Zoll',1999)">
+            <i class="fas fa-shopping-cart"></i> Buy
+          </button>
+        </div>
+      </figure>
+      <figure class="card">
+        <img class="product" src="./images/product04.png" alt="" />
+        <h3 class="title">Sony Xperia Z4</h3>
+        <figcaption class="description">
+          Tablet-PC LTE 4G (25,6 cm (10,1 Zoll) TFT-Display,
+          Octa-Core-Prozessor, 8,1 Megapixel-Kamera, 32 GB interner Speicher,
+          Android 5.0) schwarz
+        </figcaption>
+        <div class="card-footer">
+          <p class="price">499,00 €</p>
+          <button onclick="kaufen('Sony Xperia Z4',499)">
+            <i class="fas fa-shopping-cart"></i> Buy
+          </button>
+        </div>
+      </figure>
+      <figure class="card">
+        <img class="product" src="./images/product05.png" alt="" />
+        <h3 class="title">SONY WH-1000XM3</h3>
+        <figcaption class="description">
+          Aktives Noise Cancelling: Optimierung der Geräuschminimierung an
+          Bewegungsmuster sowie Anpassung an den Luftdruck Quick Attention
+          Modus: blitzschnell die Umgebung durch intuitives Handauflegen
+          wahrnehmen und Gestenkontrolle über Ohrmuschel zur Bedienung des
+          Kopfhörers Kompatibel mit Amazon Alexa.
+        </figcaption>
+        <div class="card-footer">
+          <p class="price">199,00 €</p>
+          <button onclick="kaufen('SONY WH-1000XM3',199)">
+            <i class="fas fa-shopping-cart"></i> Buy
+          </button>
+        </div>
+      </figure>
+      <figure class="card">
+        <img class="product" src="./images/product06.png" alt="" />
+        <h3 class="title">MSI Pulse GL76 11UEK-033</h3>
+        <figcaption class="description">
+          MSI Pulse GL76 11UEK-033 (17,3 Zoll / 144Hz) Gaming-Laptop (Intel Core
+          i7-11800H+HM570, 6GB GDDR6 VRAM, 1TB, Windows 10 Home), Intel Core
+          i7-11800H Prozessor der 11. Generation (8-Kern, bis 4,60 GHz, 24 MB
+          SmartCache) schnelle Nvidia GeForce RTX 3060 6GB GDDR6 VRAM
+          High-End-Grafikkarte
+        </figcaption>
+        <div class="card-footer">
+          <p class="price">1699,00 €</p>
+          <button onclick="kaufen('MSI Pulse GL76',1699)">
+            <i class="fas fa-shopping-cart"></i> Buy
+          </button>
+        </div>
+      </figure>
+      <figure class="card">
+        <img class="product" src="./images/product07.png" alt="" />
+        <h3 class="title">Samsung Galaxy S21 Ultra 5G</h3>
+        <figcaption class="description">
+          Vollendete Form: neuartiges Kameradesign und mattes Farbfinish Voller
+          Details: hochauflösende Aufnahmen fast wie vom Profi dank 108
+          MP-Kamera und 8K-Video Voller Fokus: mit Video Snap und Single Take
+          Lieblingsmomente einfangen - egal wann, egal wo. Volle Galaxy-Power:
+          superschneller Prozessor, starker Akku
+        </figcaption>
+        <div class="card-footer">
+          <p class="price">835,00 €</p>
+          <button onclick="kaufen('Samsung Galaxy S21',835)">
+            <i class="fas fa-shopping-cart"></i> Buy
+          </button>
+        </div>
+      </figure>
+      <figure class="card">
+        <img class="product" src="./images/product08.png" alt="" />
+        <h3 class="title">ASUS X571</h3>
+        <figcaption class="description">
+          Für eine reibungslose und reaktionsschnelle Rechenleistung wird das
+          ASUS F571 von Intel® Prozessoren angetrieben. Mit der diskreten bis zu
+          NVIDIA® GeForce® GTX 1650 Grafikkarte, bis zu 8GB RAM und Windows 10
+          Pro ist der ASUS F571 Dein idealer täglicher Begleiter.
+        </figcaption>
+        <div class="card-footer">
+          <p class="price">949,00 €</p>
+          <button onclick="kaufen('ASUS X571',949)">
+            <i class="fas fa-shopping-cart"></i> Buy
+          </button>
+        </div>
+      </figure>
+      <figure class="card">
+        <img class="product" src="./images/product09.png" alt="" />
+        <h3 class="title">Rekam Presto X4</h3>
+        <figcaption class="description">
+          Matrix resolution 4.2 Mpix Viewfinder optic Display TFT 1.6 "built-in
+          Focal length 5.1 mm Focal length (35mm) 31 mm Focus modes fixed focus
+          Minimum focusing distance 100 cm Minimum Focusing Distance (Macro) 20
+          cm Lens aperture F / 2.9-8.0 Digital Zoom 4x Matrix size 1 / 2.5 "
+          Matrix sensitivity ISO auto Exposure
+        </figcaption>
+        <div class="card-footer">
+          <p class="price">89,00 €</p>
+          <button onclick="kaufen('Rekam Presto X4',89)">
+            <i class="fas fa-shopping-cart"></i> Buy
+          </button>
+        </div>
+      </figure>
+    </main>
+
+    <!-- Footer -->
+    <footer>Copyright &copy; 2021 Electro Shop GmbH</footer>
+  </body>
+</html>

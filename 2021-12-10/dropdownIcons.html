@@ -22,7 +22,7 @@
 		<select class="rank">
 			<option value="1">1</option>
 			<option value="2">2</option>
-			<option value="3">3</option>
+			<option value="3" selected>3</option>
 			<option value="4">4</option>
 			<option value="5">5</option>
 		</select>
@@ -35,14 +35,21 @@
 		const infoElem = document.querySelector('#infoButton');
 		const starsElem = document.querySelector('.stars');
 
+		const updateStars = () => {
+			starsElem.innerHTML = `${rankElem.value} stars will go here`;
+			// starsElem.innerHTML = rankElem.value + ' stars will go here';
+		}
+
 		starsElem.innerHTML = 'stars will go here';
 		rankElem.onchange = () => {
-			console.log(`changed to ${rankElem.value}`);
+			updateStars();
 		}
 
 		infoElem.onclick = () => {
 			console.log('you clicked info');
 		}
+
+		window.onload = updateStars;
 	</script>
 </body>
 

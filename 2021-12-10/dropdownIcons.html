@@ -1,10 +1,14 @@
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible"
+		  content="IE=edge">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0">
 	<title>dropdown icons</title>
 </head>
+
 <body>
 	<select class="rank">
 		<option value="1">1</option>
@@ -13,5 +17,18 @@
 		<option value="4">4</option>
 		<option value="5">5</option>
 	</select>
+	<button id="infoButton">info</button>
+	<script>
+		const rankElem = document.querySelector('.rank');
+		const infoElem = document.querySelector('#infoButton');
+		rankElem.onchange = () => {
+			console.log(`changed to ${rankElem.value}`);
+		}
+
+		infoElem.onclick = () => {
+			console.log('you clicked info');
+		}
+	</script>
 </body>
+
 </html>

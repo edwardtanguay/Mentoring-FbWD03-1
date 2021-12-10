@@ -7,12 +7,20 @@
 	<meta name="viewport"
 		  content="width=device-width, initial-scale=1.0">
 	<title>dropdown icons</title>
+	    <link rel="stylesheet"
+        type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<style>
 		.rankDropdown {
 			display: flex;
 		}
 		.stars {
 			margin: 0 0 0 5px;
+			color: goldenrod;
+			font-size: 1.3rem;
+		}
+		.stars i {
+			margin: 0 0 0 2px;
 		}
 	</style>
 </head>
@@ -22,9 +30,12 @@
 		<select class="rank">
 			<option value="1">1</option>
 			<option value="2">2</option>
-			<option value="3" selected>3</option>
-			<option value="4">4</option>
+			<option value="3">3</option>
+			<option value="4" selected>4</option>
 			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+		
 		</select>
 		<div class="stars"></div>
 	</div>
@@ -36,7 +47,7 @@
 		const starsElem = document.querySelector('.stars');
 
 		const updateStars = () => {
-			starsElem.innerHTML = `${rankElem.value} stars will go here`;
+			starsElem.innerHTML = '<i class="fa fa-star" aria-hidden="true"></i>'.repeat(rankElem.value);
 			// starsElem.innerHTML = rankElem.value + ' stars will go here';
 		}
 

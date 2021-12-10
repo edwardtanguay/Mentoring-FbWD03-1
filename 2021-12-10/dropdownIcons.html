@@ -7,20 +7,35 @@
 	<meta name="viewport"
 		  content="width=device-width, initial-scale=1.0">
 	<title>dropdown icons</title>
+	<style>
+		.rankDropdown {
+			display: flex;
+		}
+		.stars {
+			margin: 0 0 0 5px;
+		}
+	</style>
 </head>
 
 <body>
-	<select class="rank">
-		<option value="1">1</option>
-		<option value="2">2</option>
-		<option value="3">3</option>
-		<option value="4">4</option>
-		<option value="5">5</option>
-	</select>
+	<div class="rankDropdown">
+		<select class="rank">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<div class="stars"></div>
+	</div>
+	<hr>
 	<button id="infoButton">info</button>
 	<script>
 		const rankElem = document.querySelector('.rank');
 		const infoElem = document.querySelector('#infoButton');
+		const starsElem = document.querySelector('.stars');
+
+		starsElem.innerHTML = 'stars will go here';
 		rankElem.onchange = () => {
 			console.log(`changed to ${rankElem.value}`);
 		}

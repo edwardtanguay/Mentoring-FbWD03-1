@@ -1,5 +1,5 @@
 
-const colors = ["brown","red", "blue", "green", "yellow", "yellow", "black"];
+const colors = ["brown", "red", "blue", "green", "yellow", "yellow", "black"];
 
 colors.forEach(color => {
 	if (color === 'red') {
@@ -7,4 +7,4 @@ colors.forEach(color => {
 	} else {
 		console.log('neutral');
 	}
-})
+});

@@ -1281,11 +1281,15 @@ const customers = [
 
 for (const customer of customers) {
 	// console.log(`${customer.companyName} (${customer.customerID})`);	
+	if (customer === 'Ajax Codes') {
+		// add code
+	}
 }
 
 let cities = customers.map(m => m.address.city);
 // cities = [...new Set(cities)];
 console.log(cities.slice(0,5).join(' * '));
+
 
 cities.shift();
 cities.shift();

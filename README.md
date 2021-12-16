@@ -5,8 +5,8 @@
 ### Review topics
 
 - Lösungen zu den Aufgaben könnten im Mentoring von den Studenten präsentiert werden:
-https://github.com/FBW-W21-d03/christmas-project
-https://github.com/FBW-W21-d03/advent-calendar
+	- https://github.com/FBW-W21-d03/christmas-project
+	- https://github.com/FBW-W21-d03/advent-calendar
 
 - `if/else/switch` 
 	- given an array of colors, display "warning!" if color is red, display "go!" if color is green, and for all other colors display "---"

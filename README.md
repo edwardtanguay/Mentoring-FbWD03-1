@@ -4,6 +4,10 @@
 
 ### Review topics
 
+- Lösungen zu den Aufgaben könnten im Mentoring von den Studenten präsentiert werden:
+https://github.com/FBW-W21-d03/christmas-project
+https://github.com/FBW-W21-d03/advent-calendar
+
 - `if/else/switch` 
 	- given an array of colors, display "warning!" if color is red, display "go!" if color is green, and for all other colors display "---"
 		- do this task again with `switch` instead of `if/else`
@@ -49,6 +53,9 @@
 - **:construction: star-clicking Live-Coding**: instead of the dropdown, one has 5 empty stars, when one clicks a star, that number of stars is selected, if you click e.g. 5, all 5 are selected
 - **:construction: message-notification Live-Coding**: when user enters name and comment on site, and clicks send button, website admin receives an e-mail (e.g. https://formspree.io)
 - **:muscle: Vim editor basics:** learn how to use the vim editor in VSCode: [Vim editor basics](https://onespace.netlify.app/howtos?id=458)
+- **:question: Veaceslav: Github pushen in ein remote repository** - von VSCode, vom Terminal, hast du das schon probiert und bekommst einen Fehler oder willst du das nur allgemein wissen, usw.? 
+- **:question: Aisha: Github rejected non-fast-forward Fehler** - kannst du das ein bisschen näher beschreiben, was hast du genau versucht und was war die genaue Fehlermeldung?
+- **:question: Algorithmen, API's, 2D-Canvas** - bestimmte Algorithmen z.B. Bubblesorts oder nur allgemeine Algorithmen? - wollen wir ein API zusammen aufstellen? das wäre cool :muscle:, oder APIs vom Frontend abrufen? auch cool :muscle: - und mit 2D-Canvas, meinst du das Canvas Element in HTML5?
 - **VSCode Debugging:** [Debugging JavaScript in Node with VSCode](https://onespace.netlify.app/howtos?id=454)
 
 ## 2021-12-10

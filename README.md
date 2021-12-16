@@ -2,18 +2,44 @@
 
 ## 2021-12-17
 
+### Housekeeping: The Structure of Mentoring
+
+- From the DCI Mentoring Concept: 
+	- *"The structure of the Mentoring varies and **depends on the activity of the students** as much as the Mentor. The **questions of the students have priority**. The content of the mentoring lessons are **adapted to the students needs**.*
+		- :star: The more you continually communicate to me what you want and need to learn, the more you determine the content of the mentoring. 
+	- *"Recap **complex content**, build on **current topics**, answer **open questions**, support **student projects**, explain **new technologies**."*
+		- :star: The more you continually communicate to me what content is complex to you, what current topics are difficult for you to understand and why, what open questions you have, what your projects are, and what new technologies you want to learn, the more mentoring will make you a better developer. 
+	-  *"Mentoring aims to **respond to the different levels** within a class and to **support especially slow learners**."*
+		- :star: We can structure our mentoring time anyway you feel is best. My recommendation is the following:
+			1. first half (9:00-10:30) - **Review Topics**: repetition of the easiest material, make sure everybody understands everything covered this week and up to this point in the course, ask anything you want and it will be explained, no question is too simple, "leave nobody behind"
+			2. second half (10:45-12:00) - **Specific Topics**: any question regarding any technology matter how advanced, live-coding requests on any topic, help with any specific project, request to learn new technology, etc. 
+			3. keep **breakout rooms open** at all times: if the current topic is too easy, too difficult, or not interesting to you, feel free to work on your own or in groups in the breakout rooms, I will send a notice out via Zoom when we have a major change in topic
+			4. **continually suggest new topics** that you want to do in mentoring, either mention them in class or write them in Slack and I will record and schedule them here in this document: the more **detailed** the request the better :muscle:, the more **prenotice** you give me the better :muscle:
+
 ### Review topics
 
-- Lösungen zu den Aufgaben könnten im Mentoring von den Studenten präsentiert werden:
+- von Jan: Lösungen zu den Aufgaben könnten im Mentoring von den Studenten präsentiert werden:
 	- https://github.com/FBW-W21-d03/christmas-project
 	- https://github.com/FBW-W21-d03/advent-calendar
+		- getDate(): https://www.w3schools.com/js/js_date_methods.asp
+		- setDate(): https://www.w3schools.com/js/js_date_methods_set.asp
+		- find bug: line 7
+		- CSS
+			- modal
+				- move in devtools
+			- find bug: scroll bars
 
 - `if/else/switch` 
 	- given an array of colors, display "warning!" if color is red, display "go!" if color is green, and for all other colors display "---"
 		- do this task again with `switch` instead of `if/else`
 	- make a function which receives a country and returns the capital, use `switch`
-	- use `switch` to return a function that returns what to wear depending on the weather
+	- use `switch` to return what to wear depending on the weather
 	- :muscle: CHALLENGE: use `switch` to create a function that takes "add", "subtract", "divide", or "multiply" and returns a function to perform this task 
+- best-choices when to use which loops
+	- a range of numbers: `for`
+	- an array: `for-of` or `forEach()`
+	- an array that is chained onto another ES6 array function: `forEach()`
+	- properties in an object: `for-in`
 - `.forEach() / for-of / for / for-in` 
 	- display numbers 1 to 10
 	- display numbers 10 to 1
@@ -21,13 +47,26 @@
 	- display numbers 100 to 0 in decrements of 10
 	- display numbers 1 to 1000 but stop at 23 
 	- :muscle: CHALLENGE: display numbers 1 to 10 on HTML page in a UL/LI list
+	- :muscle: CHALLENGE: display numbers 1 to 10 on HTML page in a dropdown list
 	- display an array of five colors
 	- display an array of five colors except for yellow
-	- :muscle: CHALLENGE: display numbers 1 to 10 on HTML page in a dropdown list
 	- :muscle: CHALLENGE: display colors on HTML page in their own color
 	- :muscle: CHALLENGE: display all company names of [Northwind](https://github.com/graphql-compose/graphql-compose-examples/tree/master/examples/northwind/data/json) customers
 	- display all Northwind company names with company id in parentheses
-- `array functions: .join() .slice() .pop() .push() .shift() .unshift() .reverse() .sort() .splice() .indexOf() .lastIndexOf() .includes()` 
+- `array functions: 
+	- `.join()` - **joins** array items together into a string
+	- `.slice()` - **slices** a section out of array to produce another array 
+		- `.slice(2,5)` - *slice starting at 2 and stop before 5*
+	- `.splice()` - **splices** items out of an array and can insert other items into that space
+		- `months.splice(4, 1, 'May');` - *before item with index 4, delete 1 item and insert "May"*
+	- `.push(item)` - **push** an item onto the end of an array
+	- `.pop()` - **pop** an item off the end of an array
+	- `.unshift(item)` - **unshifts** an item onto the beginning of an array (like push but on the left)
+	- `.shift()` - **shift** the first element off the array (like pop but on the left)
+	- `.reverse()` - **reverses** the order of the array
+	- `.sort()` - **sorts** the list (of strings) in alphabetical order
+	- `.indexOf()` - gets the **index of** an item 
+	- `.lastIndexOf()` - gets the **index of** the **last instance** of an item 
 	- display numbers 1 to 10 separated by hyphens (`join`)
 	- display numbers 1 to 10 in square brackets separated by hypens (`map`, `join`)
 	- :muscle: CHALLENGE: display numbers 1 to 10 in colored boxes on HTML page (`map`, `join`)
@@ -35,7 +74,7 @@
 	- :muscle: CHALLENGE: use map() on HTML page to display divs
 	- display the 2nd, 3rd and 4th Northwind customer (`slice`)
 	- build an array of customer names (`push`)
-	- remove the last customer name from Northwin name array (`pop`)
+	- remove the last customer name from Northwind name array (`pop`)
 	- remove the first customer name in Northwind name array(`shift`)
 	- add a new customer name to end of Northwind name array (`push`)
 	- add a new customer name to beginning of Northwind name array (`unshift`)

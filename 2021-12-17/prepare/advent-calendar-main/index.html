@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advent Calndar 2021</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <button onclick="closeModal()">X</button>
+          <p id="quote">Some text in the Modal..</p>
+          <p id="author">Some author in the Modal...</p>
+          <img src="data:image/jpeg;base64,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">
+        </div>
+      
+      </div>
+    <main>
+        <h1>Advent Calendar 2021</h1>
+        <section id="calendarHeader">
+            <div class="restricted">Mo</div>
+            <div class="restricted">Di</div>
+            <div class="restricted">Mi</div>
+            <div class="restricted">Do</div>
+            <div class="restricted">Fr</div>
+            <div class="restricted">Sa</div>
+            <div class="restricted">So</div>
+        </section>
+        <section>
+            <div class="restricted">-</div>
+            <div class="restricted">-</div>
+            <div id="1" onclick="showGift(1)">1</div>
+            <div id="2" onclick="showGift(2)">2</div>
+            <div id="3" onclick="showGift(3)">3</div>
+            <div id="4" onclick="showGift(4)">4</div>
+            <div id="5" onclick="showGift(5)">5</div>
+        </section>
+        <section>
+            <div id="6" onclick="showGift(6)">6</div>
+            <div id="7" onclick="showGift(7)">7</div>
+            <div id="8" onclick="showGift(8)">8</div>
+            <div id="9" onclick="showGift(9)">9</div>
+            <div id="10" onclick="showGift(10)">10</div>
+            <div id="11" onclick="showGift(11)">11</div>
+            <div id="12" onclick="showGift(12)">12</div>
+        </section>
+        <section>
+            <div id="13" onclick="showGift(13)">13</div>
+            <div id="14" onclick="showGift(14)">14</div>
+            <div id="15" onclick="showGift(15)">15</div>
+            <div id="16" onclick="showGift(16)">16</div>
+            <div id="17" onclick="showGift(17)">17</div>
+            <div id="18" onclick="showGift(18)">18</div>
+            <div id="19" onclick="showGift(19)">19</div>
+        </section>
+        <section>
+            <div id="20" onclick="showGift(20)">20</div>
+            <div id="21" onclick="showGift(21)">21</div>
+            <div id="22" onclick="showGift(22)">22</div>
+            <div id="23" onclick="showGift(23)">23</div>
+            <div id="24" onclick="showGift(24)">24</div>
+            <div class="restricted">-</div>
+            <div class="restricted">-</div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

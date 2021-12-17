@@ -1,0 +1,78 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+		  type="text/css"
+		  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<title>five stars</title>
+	<style>
+		body {
+			padding: 20px;
+		}
+
+		.stars {
+			display: flex;
+		}
+
+		.stars i {
+			color: goldenrod;
+			text-shadow: 1px 1px 1px #333;
+			font-size: 3rem;
+			margin-right: 10px;
+			cursor: pointer;
+		}
+
+		.starControl {
+			background-color: #ddd;
+			padding: 20px;
+			border: 1px solid #aaa;
+			border-radius: 5px;
+			width: 270px;
+		}
+
+		.number {
+			font-size: 11rem;
+			color: #555;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="starControl">
+		<div class="stars"></div>
+		<div class="number"></div>
+	</div>
+	<script>
+		const numberElem = document.querySelector(".number");
+		const starsElem = document.querySelector('.stars');
+
+		const createStars = (stars) => {
+			starsElem.innerHTML = '';
+			for (let x = 1; x <= 5; x++) {
+				let starClass = '';
+				if (x <= stars) {
+					starClass = 'fa-star';
+				} else {
+					starClass = 'fa-star-o';
+				}
+				starsElem.innerHTML += `<i class="fa ${starClass}" onclick="setStars(${x})"></i>`;
+			}
+			numberElem.innerText = stars;
+			localStorage.setItem('stars', stars);
+		}
+
+		const setStars = (stars) => {
+			createStars(stars);
+		}
+
+		window.onload = () => {
+			let stars = localStorage.getItem('stars');
+			if(stars === null) stars = 3;
+			createStars(stars);
+		}
+	</script>
+</body>
+</html>

@@ -24,6 +24,7 @@
 			text-shadow: 1px 1px 1px #333;
 			font-size: 3rem;
 			margin-right: 10px;
+			cursor: pointer;
 		}
 
 		.starControl {
@@ -44,17 +45,42 @@
 
 <body>
 	<div class="starControl">
-		<div class="stars">
-			<i class="fa fa-star"></i>
-			<i class="fa fa-star"></i>
-			<i class="fa fa-star-o"></i>
-			<i class="fa fa-star-o"></i>
-			<i class="fa fa-star-o"></i>
-		</div>
-		<div class="number">
-			3
-		</div>
+		<div class="stars"></div>
+		<div class="number">3</div>
 	</div>
+	<script>
+		const stars = 2;
+
+		const numberElem = document.querySelector(".number");
+		const starsElem = document.querySelector('.stars');
+
+		const createStars = (stars) => {
+			starsElem.innerHTML = '';
+			numberElem.innerHTML = stars;
+			for (let x = 1; x <= 5; x++) {
+				let starClass = '';
+				if (x <= stars) {
+					starClass = 'fa-star';
+				} else {
+					starClass = 'fa-star-o';
+				}
+				starsElem.innerHTML += `<i class="fa ${starClass}" onclick="setStars(${x})"></i>`;
+			}
+			numberElem.innerText = stars;
+			localStorage.setItem('stars', stars);
+		}
+
+		const setStars = (stars) => {
+			createStars(stars);
+		}
+
+		window.onload = () => {
+			let stars = localStorage.getItem('stars');
+			if(stars === null) stars = 3;
+			createStars(stars);
+		}
+	</script>
+
 </body>
 
 </html>

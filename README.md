@@ -87,7 +87,9 @@
 ### Specific topics 
 
 - **:construction: How to change VSCode font to cursive**: *"das war die Fira Nerd Font bzw FiraMono Nerd Font und dann noch die Schrift flottflott und editor.fontLigatures"*
+	- https://onespace.netlify.app/howtos?id=461
 - **:construction: bugfix**: on page load, force certain number to be default (doesn't work with window.onload)
+	- hack: `let _value = rankElem.value;`
 - **:construction: localStorage Live-Coding**: use the star-dropdown example where the browser remembers the number for each customer, e.g. test: Firefox has one 3, Chrome has 4, you close them, open them, and they still have 3 and 4
 - **:construction: star-clicking Live-Coding**: instead of the dropdown, one has 5 empty stars, when one clicks a star, that number of stars is selected, if you click e.g. 5, all 5 are selected
 - **:construction: message-notification Live-Coding**: when user enters name and comment on site, and clicks send button, website admin receives an e-mail (e.g. https://formspree.io)

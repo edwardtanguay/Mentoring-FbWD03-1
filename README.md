@@ -53,7 +53,7 @@
 	- :muscle: CHALLENGE: display colors on HTML page in their own color
 	- :muscle: CHALLENGE: display all company names of [Northwind](https://github.com/graphql-compose/graphql-compose-examples/tree/master/examples/northwind/data/json) customers
 	- display all Northwind company names with company id in parentheses
-- `array functions: 
+- array functions: 
 	- `.join()` - **joins** array items together into a string
 	- `.slice()` - **slices** a section out of array to produce another array 
 		- `.slice(2,5)` - *slice starting at 2 and stop before 5*
@@ -92,14 +92,16 @@
 	- hack: `let _value = rankElem.value;`
 - **:star: star-clicking Live-Coding**: instead of the dropdown, one has 5 empty stars, when one clicks a star, that number of stars is selected, if you click e.g. 5, all 5 are selected
 	- https://onespace.netlify.app/howtos?id=462
+- **:star: star-clicking Live-Coding**: instead of the dropdown, one has 5 empty stars, when one clicks a star, that number of stars is selected, if you click e.g. 5, all 5 are selected
+	- Howto: [Make five star control which can be clicked to change](https://onespace.netlify.app/howtos?id=462)
 - **:star: localStorage Live-Coding**: use the star-dropdown example where the browser remembers the number for each customer, e.g. test: Firefox has one 3, Chrome has 4, you close them, open them, and they still have 3 and 4
-	- https://onespace.netlify.app/howtos?id=462
-- **:construction: message-notification Live-Coding**: when user enters name and comment on site, and clicks send button, website admin receives an e-mail (e.g. https://formspree.io)
+	- Howto: [Make five star control which can be clicked to change](https://onespace.netlify.app/howtos?id=462)
 - **:muscle: Vim editor basics:** learn how to use the vim editor in VSCode: [Vim editor basics](https://onespace.netlify.app/howtos?id=458)
 - **:question: Veaceslav: Github pushen in ein remote repository** - von VSCode, vom Terminal, hast du das schon probiert und bekommst einen Fehler oder willst du das nur allgemein wissen, usw.? 
 - **:question: Aisha: Github rejected non-fast-forward Fehler** - kannst du das ein bisschen näher beschreiben, was hast du genau versucht und was war die genaue Fehlermeldung?
 - **:question: Algorithmen, API's, 2D-Canvas** - bestimmte Algorithmen z.B. Bubblesorts oder nur allgemeine Algorithmen? - wollen wir ein API zusammen aufstellen? das wäre cool :muscle:, oder APIs vom Frontend abrufen? auch cool :muscle: - und mit 2D-Canvas, meinst du das Canvas Element in HTML5?
-- **VSCode Debugging:** [Debugging JavaScript in Node with VSCode](https://onespace.netlify.app/howtos?id=454)
+---
+- **:muscle: VSCode Debugging:** [Debugging JavaScript in Node with VSCode](https://onespace.netlify.app/howtos?id=454)
 
 ## 2021-12-10
 

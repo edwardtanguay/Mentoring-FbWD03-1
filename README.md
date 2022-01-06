@@ -62,11 +62,10 @@
 ### Specific Topics
 
 - **:muscle: Vim editor basics:** learn how to use the vim editor in VSCode: [Vim editor basics](https://onespace.netlify.app/howtos?id=458)
+- **:muscle: My recent howtos:**: https://edwardtanguay.netlify.app/howtos
 - **:question: Veaceslav: Github pushen in ein remote repository** - von VSCode, vom Terminal, hast du das schon probiert und bekommst einen Fehler oder willst du das nur allgemein wissen, usw.? 
 - **:question: Aisha: Github rejected non-fast-forward Fehler** - kannst du das ein bisschen näher beschreiben, was hast du genau versucht und was war die genaue Fehlermeldung?
 - **:question: Algorithmen, API's, 2D-Canvas** - bestimmte Algorithmen z.B. Bubblesorts oder nur allgemeine Algorithmen? - wollen wir ein API zusammen aufstellen? das wäre cool :muscle:, oder APIs vom Frontend abrufen? auch cool :muscle: - und mit 2D-Canvas, meinst du das Canvas Element in HTML5?
----
-- **:muscle: VSCode Debugging:** [Debugging JavaScript in Node with VSCode](https://onespace.netlify.app/howtos?id=454)
 
 ## 2021-12-17
 
@@ -121,6 +120,7 @@
 	- Howto: [Make five star control which can be clicked to change](https://onespace.netlify.app/howtos?id=462)
 - **:star: localStorage Live-Coding**: use the star-dropdown example where the browser remembers the number for each customer, e.g. test: Firefox has one 3, Chrome has 4, you close them, open them, and they still have 3 and 4
 	- Howto: [Make five star control which can be clicked to change](https://onespace.netlify.app/howtos?id=462)
+- **:muscle: VSCode Debugging:** [Debugging JavaScript in Node with VSCode](https://onespace.netlify.app/howtos?id=454)
 
 ## 2021-12-10
 

@@ -61,7 +61,7 @@
 
 ### Specific Topics
 
-- **:muscle: Vim editor basics:** learn how to use the vim editor in VSCode: [Vim editor basics](https://onespace.netlify.app/howtos?id=458)
+- **:muscle: Vim editor basics:** learn how to use the vim editor in VSCode: [Vim editor basics](https://edwardtanguay.netlify.app/howtos?id=458)
 - **:muscle: My recent howtos:**: https://edwardtanguay.netlify.app/howtos
 - **:question: Veaceslav: Github pushen in ein remote repository** - von VSCode, vom Terminal, hast du das schon probiert und bekommst einen Fehler oder willst du das nur allgemein wissen, usw.? 
 - **:question: Aisha: Github rejected non-fast-forward Fehler** - kannst du das ein bisschen näher beschreiben, was hast du genau versucht und was war die genaue Fehlermeldung?
